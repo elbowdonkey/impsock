@@ -16,6 +16,7 @@ You'll also need to accept that this isn't a one-size-fits-all solution. If it w
 Included in this repo is a basic sample app. To get it running, opening a terminal:
   
   %> cd path/to/this/repo/example
+  
   %> node server.js
   
 Now open up a browser and go to http://localhost:3000
