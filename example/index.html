@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>impsock example</title>
+  <style type="text/css">
+    html,body {
+      background-color: #000;
+      color: #fff;
+      font-family: helvetica, arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-size: 12pt;
+    }
+    
+    #canvas {
+      position: absolute;
+      left: 0;
+      right: 0;
+      border: 1px solid #555;
+    }
+  </style>
+  
+  <script type="text/javascript" charset="utf-8">
+    Array.prototype.diff = function(a) {
+        return this.filter(function(i) {return !(a.indexOf(i) > -1);});
+    };
+  </script>
+  
+  <script src="json.js" type="text/javascript" charset="utf-8"></script>
+  <script src="socket.io-client/socket.io.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="lib/impact/impact.js"></script>
+  <script type="text/javascript" src="lib/game/main.js"></script>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+</body>
+</html>
